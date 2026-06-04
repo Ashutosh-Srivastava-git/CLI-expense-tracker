@@ -16,7 +16,6 @@ def save_expenses(expenses):
         json.dump(expenses, f, indent=2)
 
 def print_header(title):
-    width = 60
     print("\n")
     print(f"  {title}")
 
