@@ -74,7 +74,7 @@ def get_valid_category():
         choice = input("  Choose category (1-4): ").strip()
         if choice in [str(i) for i in range(1, len(CATEGORIES) + 1)]:
             return CATEGORIES[int(choice) - 1]
-        print("  ✗ Invalid choice. Enter a number between 1 and 4.")
+        print("  Invalid choice. Enter a number between 1 and 4.")
 
 
 def add_expense(expenses):
@@ -118,7 +118,7 @@ def filter_by_category(expenses):
 
     choice = input("  Choose category (1-4): ").strip()
     if choice not in [str(i) for i in range(1, len(CATEGORIES) + 1)]:
-        print("  ✗ Invalid choice.")
+        print("  Invalid choice.")
         return
 
     selected = CATEGORIES[int(choice) - 1]
